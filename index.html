@@ -4,15 +4,20 @@
     </head>
     <body>
         <div id="app"></div>
+        <div id="app2"></div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="./script.js"></script>
         <script>
-            /*const renderer = new Renderer(
+            const renderer = new Renderer(
                 new Counter,
                 document.getElementById('app')
-            );*/
+            );
 
+            const renderer2 = new Renderer(
+                new Counter,
+                document.getElementById('app2')
+            );
 
         </script>
     </body>

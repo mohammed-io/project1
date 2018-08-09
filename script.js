@@ -30,3 +30,28 @@ class Renderer
     }
 }
 
+
+class Counter extends Component
+{
+    constructor() {
+        super();
+
+        this.count = 0;
+    }
+
+    render() {
+        return $('<div>')
+            .append($('<p>')
+            .html(`Count: ${this.count}`)
+            ).append([
+                $('<button>').html('Increment').on('click', () => {
+                    this.count++;
+                    this.notify();
+                }),
+                $('<button>').html('Decrement').on('click', () => {
+                    this.count--;
+                    this.notify();
+                })
+            ])[0];
+    }
+}
