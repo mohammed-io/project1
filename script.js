@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 class Component
 {
     notify() {
@@ -74,3 +75,4 @@ class Stopwatch extends Component
         ])[0];
     }
 }
+
